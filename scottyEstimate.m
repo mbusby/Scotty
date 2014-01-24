@@ -201,7 +201,7 @@ function [ h ] = scottyEstimate( fileName, nControlSamples, nTestSamples, output
     
     
     
-    try
+  
         %============================================================
         %Analyze the sequencing depth
         %============================================================
@@ -412,11 +412,11 @@ function [ h ] = scottyEstimate( fileName, nControlSamples, nTestSamples, output
             delete(filename1);
             print(powerPlot, '-dpng' , filename1 , '-r130');
         end
-    catch
+
         
         warningString=strcat(warningString, '<br>ERROR! A fatal error has occured and Scotty cannot continue.  Please contact us so that we can troubleshoot this problem.');
 
-    end
+ 
 
   
     %===================================================
